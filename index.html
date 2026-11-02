@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- SEO: valores estáticos espelham data/content.en.json (idioma padrão) para robôs que não executam JS.
        O app.js reescreve tudo a partir do JSON ao carregar/trocar idioma. Ao mudar meta.* no JSON EN, atualize aqui também. -->
-  <title data-i18n="meta.title">Mateus Ribeiro — Software Engineer, Payments</title>
-  <meta name="description" data-i18n-attr="content:meta.description" content="Engineer building and leading high-volume payment systems, now with AI-augmented teams.">
+  <title data-i18n="meta.title">Mateus Ribeiro — Software Engineer · Squad Lead</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Software engineer who grew from production support to squad lead. Leads teams, mentors engineers and brings AI into the engineering workflow.">
   <link rel="canonical" href="https://mateus-ribeiro-spec.github.io/">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://mateus-ribeiro-spec.github.io/">
   <meta property="og:site_name" content="Mateus Ribeiro">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="pt_BR">
-  <meta property="og:title" data-i18n-attr="content:meta.title" content="Mateus Ribeiro — Software Engineer, Payments">
-  <meta property="og:description" data-i18n-attr="content:meta.description" content="Engineer building and leading high-volume payment systems, now with AI-augmented teams.">
+  <meta property="og:title" data-i18n-attr="content:meta.title" content="Mateus Ribeiro — Software Engineer · Squad Lead">
+  <meta property="og:description" data-i18n-attr="content:meta.description" content="Software engineer who grew from production support to squad lead. Leads teams, mentors engineers and brings AI into the engineering workflow.">
   <meta name="twitter:card" content="summary">
   <meta name="color-scheme" content="light">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,15 +36,13 @@
 
   <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="name">
+      <!-- Espaço da foto: placeholder neutro; o app.js troca por <img> quando profile.photo tiver valor. -->
+      <div class="photo" id="photo" aria-hidden="true"></div>
       <h1 id="name" data-i18n="profile.name"></h1>
       <p class="role" data-i18n="profile.role"></p>
       <p class="tagline" data-i18n="profile.tagline"></p>
-      <ul class="highlights" id="highlights"></ul>
-    </section>
-
-    <section aria-labelledby="exp-title">
-      <h2 id="exp-title" data-i18n="ui.experience"></h2>
-      <ol class="timeline" id="experience"></ol>
+      <ul class="big-numbers" id="big-numbers" hidden></ul>
+      <ul class="highlights" id="highlights" hidden></ul>
     </section>
 
     <section aria-labelledby="proj-title">
@@ -53,15 +51,21 @@
       <p class="muted" id="projects-empty" data-i18n="ui.projectsSoon" hidden></p>
     </section>
 
+    <section aria-labelledby="career-title">
+      <h2 id="career-title" data-i18n="ui.career"></h2>
+      <ol class="timeline" id="experience"></ol>
+    </section>
+
     <section aria-labelledby="edu-title">
       <h2 id="edu-title" data-i18n="ui.education"></h2>
       <ul class="plain" id="education"></ul>
     </section>
-  </main>
 
-  <footer class="foot">
-    <ul class="links" id="links"></ul>
-  </footer>
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" data-i18n="ui.contact"></h2>
+      <ul class="links" id="links"></ul>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>

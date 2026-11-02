@@ -19,9 +19,12 @@ Página pessoal do Mateus Ribeiro, bilíngue (EN padrão / PT).
 
 1. Edite `data/content.en.json` **e** `data/content.pt.json`.
 2. Mantenha **as mesmas chaves e a mesma estrutura** nos dois arquivos (mesmo número de itens em `highlights`, `experience`, `education`, `links` etc.). Só os valores mudam de um idioma para o outro.
-3. Itens que precisam de confirmação levam `"needsConfirmation": true` e aparecem com um selo `?` na página.
-4. Se mudar `meta.title` ou `meta.description` em inglês, copie os mesmos valores para as tags `<title>`, `description` e `og:*` no `<head>` do `index.html` (são a versão estática lida por robôs de busca e prévias de link).
-5. Abra um PR. Ao fazer merge na `main`, o deploy roda sozinho.
+3. Itens que precisam de confirmação levam `"needsConfirmation": true` e **não aparecem** na página até a marcação ser removida.
+4. Ordem das seções: topo → Projetos → Carreira (`experience`) → Formação → Contato (`links`).
+5. Foto: `profile.photo` (caminho da imagem, ex. `img/mateus.jpg`) e `profile.photoAlt` (texto alternativo). Vazio mostra só o placeholder neutro.
+6. Big numbers: `bigNumbers` é uma lista de itens `{ "value": "...", "label": "..." }`; com a lista vazia o bloco fica oculto (o mesmo vale para `highlights`).
+7. Se mudar `meta.title` ou `meta.description` em inglês, copie os mesmos valores para as tags `<title>`, `description` e `og:*` no `<head>` do `index.html` (são a versão estática lida por robôs de busca e prévias de link).
+8. Abra um PR. Ao fazer merge na `main`, o deploy roda sozinho.
 
 Não escreva texto de conteúdo direto no HTML: tudo que aparece na tela vem do JSON.
 
