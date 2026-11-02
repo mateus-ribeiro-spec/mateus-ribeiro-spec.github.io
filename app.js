@@ -34,22 +34,46 @@
       if (v != null) n.setAttribute(attr, v);
     });
 
-    const ui = c.ui || {};
+    const profile = c.profile || {};
 
-    document.getElementById('highlights').replaceChildren(
-      ...(c.highlights || []).map((h) => el('li', {}, h)));
+    // Foto: placeholder neutro por padrão; <img> só quando profile.photo tiver valor.
+    const photo = document.getElementById('photo');
+    const showPlaceholder = () => {
+      photo.replaceChildren();
+      photo.setAttribute('aria-hidden', 'true');
+    };
+    if (profile.photo) {
+      const img = el('img', { src: profile.photo, alt: profile.photoAlt || '', width: 96, height: 96, decoding: 'async' });
+      img.addEventListener('error', () => { if (img.parentNode === photo) showPlaceholder(); }, { once: true });
+      photo.removeAttribute('aria-hidden');
+      photo.replaceChildren(img);
+    } else {
+      showPlaceholder();
+    }
 
+    // Big numbers: itens { "value": "...", "label": "..." }; bloco oculto se o array estiver vazio.
+    const bigNumbers = c.bigNumbers || [];
+    const bigList = document.getElementById('big-numbers');
+    bigList.replaceChildren(...bigNumbers.map((b) => {
+      const li = el('li');
+      li.append(el('span', { class: 'value' }, b.value), el('span', { class: 'label' }, b.label));
+      return li;
+    }));
+    bigList.hidden = bigNumbers.length === 0;
+
+    const highlights = c.highlights || [];
+    const hlList = document.getElementById('highlights');
+    hlList.replaceChildren(...highlights.map((h) => el('li', {}, h)));
+    hlList.hidden = highlights.length === 0;
+
+    // Itens com needsConfirmation ficam no JSON aguardando confirmação e não são exibidos.
     document.getElementById('experience').replaceChildren(...(c.experience || []).map((e) => {
       const li = el('li');
       li.append(el('h3', {}, e.role), el('p', { class: 'meta' }, `${e.company} · ${e.period}`));
-      if (e.bullets && e.bullets.length) {
+      const bullets = (e.bullets || []).filter((b) => !(b && b.needsConfirmation));
+      if (bullets.length) {
         const ul = el('ul');
-        e.bullets.forEach((b) => {
-          const item = el('li', {}, b.text ?? b);
-          // Rótulo do selo vem do JSON (ui.toConfirm) quando existir; nada de texto fixo aqui.
-          if (b.needsConfirmation) item.append(el('span', { class: 'flag', title: ui.toConfirm }, '?'));
-          ul.append(item);
-        });
+        bullets.forEach((b) => ul.append(el('li', {}, b.text ?? b)));
         li.append(ul);
       }
       return li;

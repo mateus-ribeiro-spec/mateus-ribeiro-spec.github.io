@@ -1,35 +1,36 @@
 {
   "meta": {
-    "title": "Mateus Ribeiro — Software Engineer, Payments",
-    "description": "Engineer building and leading high-volume payment systems, now with AI-augmented teams."
+    "title": "Mateus Ribeiro — Software Engineer · Squad Lead",
+    "description": "Software engineer who grew from production support to squad lead. Leads teams, mentors engineers and brings AI into the engineering workflow."
   },
   "ui": {
     "skip": "Skip to content",
-    "experience": "Experience",
+    "career": "Career",
     "projects": "Projects",
     "projectsSoon": "Coming soon.",
     "education": "Education",
-    "language": "Language",
-    "toConfirm": "To be confirmed"
+    "contact": "Contact",
+    "language": "Language"
   },
   "profile": {
     "name": "Mateus Ribeiro",
-    "role": "Software Engineer · Tech Lead · Payments",
-    "tagline": "I build and lead high-volume payment systems — now with AI-augmented teams."
+    "role": "Software Engineer · Tech Lead · Squad Lead",
+    "tagline": "Software engineer who grew from production support to squad lead. I lead teams, mentor engineers and bring AI into everyday engineering work.",
+    "photo": "",
+    "photoAlt": "Photo of Mateus Ribeiro"
   },
   "highlights": [
-    "7 years at MagaluPay, from support analyst to squad lead",
-    "Ledger, wire transfers (TED), bill payments, FX and card authorization",
     "Led up to 14 engineers across 3 squads",
     "Drove Claude adoption with custom skills: 80%+ adherence to security criteria"
   ],
+  "bigNumbers": [],
   "experience": [
     {
       "company": "MagaluPay",
       "role": "Squad Lead",
       "period": "2023 — present",
       "bullets": [
-        { "text": "Lead 2 cross-functional teams owning Ledger, Financial Services (TED, bill payment, top-ups, FX) and Backoffice." },
+        { "text": "Lead 3 cross-functional squads owning Ledger, Financial Services (TED, bill payment, top-ups, FX) and Backoffice." },
         { "text": "Systems processing around 1 million transactions per day.", "needsConfirmation": true },
         { "text": "Led AI adoption with custom Claude skills for development and security gap analysis, reaching 80%+ adherence to security criteria." }
       ]

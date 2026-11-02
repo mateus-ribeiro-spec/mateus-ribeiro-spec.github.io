@@ -22,10 +22,13 @@ body {
   overflow-wrap: break-word;
 }
 
-.top, main, .foot {
+.top, main {
   max-width: var(--measure);
   margin: 0 auto;
 }
+
+/* Garante que [hidden] vence regras de display (grid/flex) abaixo. */
+[hidden] { display: none !important; }
 
 .skip {
   position: absolute;
@@ -50,6 +53,24 @@ main:focus { outline: none; }
 
 /* Hero */
 .hero { padding: 3rem 0 2.5rem; border-bottom: 1px solid var(--rule); }
+
+/* Foto: espaço fixo (sem layout shift); placeholder neutro quando vazio. */
+.photo {
+  width: 6rem; height: 6rem; max-width: 100%;
+  margin: 0 0 1.5rem;
+  border-radius: 50%;
+  background: var(--rule);
+  overflow: hidden;
+}
+.photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Big numbers (preenchidos via data/*.json -> bigNumbers) */
+.big-numbers {
+  list-style: none; padding: 0; margin: 0 0 1.75rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 1rem;
+}
+.big-numbers .value { display: block; font: 500 clamp(1.6rem, 6vw, 2rem)/1.1 var(--serif); }
+.big-numbers .label { display: block; color: var(--muted); font-size: .9rem; }
 h1 {
   font: 500 clamp(2.4rem, 8vw, 3.4rem)/1.05 var(--serif);
   letter-spacing: -.01em;
@@ -80,8 +101,6 @@ h2 {
 .timeline ul { margin: 0; padding-left: 1.1rem; }
 .timeline li li { margin: .2rem 0; }
 
-.flag { font-size: .75rem; color: #8a5a00; background: #fff4d6; padding: .05rem .35rem; border-radius: 3px; margin-left: .3rem; }
-
 /* Projects / education */
 .projects, .plain { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 .projects a { font-weight: 500; }
@@ -90,8 +109,8 @@ h2 {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* Footer */
-.foot { border-top: 1px solid var(--rule); padding: 2rem 0 3rem; }
+/* Contact */
+.contact { padding-bottom: 3rem; }
 .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
 .links a { display: inline-block; padding: .5rem 0; }
 

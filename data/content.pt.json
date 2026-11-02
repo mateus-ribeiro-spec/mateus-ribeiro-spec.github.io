@@ -1,35 +1,36 @@
 {
   "meta": {
-    "title": "Mateus Ribeiro — Engenheiro de Software, Pagamentos",
-    "description": "Engenheiro que constrói e lidera sistemas de pagamento de alto volume, agora com times aumentados por IA."
+    "title": "Mateus Ribeiro — Engenheiro de Software · Squad Lead",
+    "description": "Engenheiro de software que cresceu da sustentação à liderança de squads. Lidera times, forma pessoas e traz IA para o fluxo de engenharia."
   },
   "ui": {
     "skip": "Pular para o conteúdo",
-    "experience": "Experiência",
+    "career": "Carreira",
     "projects": "Projetos",
     "projectsSoon": "Em breve.",
     "education": "Formação",
-    "language": "Idioma",
-    "toConfirm": "A confirmar"
+    "contact": "Contato",
+    "language": "Idioma"
   },
   "profile": {
     "name": "Mateus Ribeiro",
-    "role": "Engenheiro de Software · Tech Lead · Pagamentos",
-    "tagline": "Construo e lidero sistemas de pagamento de alto volume — agora com times aumentados por IA."
+    "role": "Engenheiro de Software · Tech Lead · Squad Lead",
+    "tagline": "Engenheiro de software que cresceu da sustentação à liderança de squads. Lidero times, formo pessoas e trago IA para o dia a dia da engenharia.",
+    "photo": "",
+    "photoAlt": "Foto de Mateus Ribeiro"
   },
   "highlights": [
-    "7 anos na MagaluPay, de analista de sustentação a squad lead",
-    "Ledger, TED, pagamento de contas, FX e autorização de cartão",
     "Liderei até 14 engenheiros em 3 squads",
     "Conduzi a adoção do Claude com skills customizadas: 80%+ de aderência a critérios de segurança"
   ],
+  "bigNumbers": [],
   "experience": [
     {
       "company": "MagaluPay",
       "role": "Squad Lead",
       "period": "2023 — atual",
       "bullets": [
-        { "text": "Lidero 2 times multidisciplinares responsáveis por Ledger, Serviços Financeiros (TED, pagamento de contas, recarga, FX) e Backoffice." },
+        { "text": "Lidero 3 squads multidisciplinares responsáveis por Ledger, Serviços Financeiros (TED, pagamento de contas, recarga, FX) e Backoffice." },
         { "text": "Sistemas que processam cerca de 1 milhão de transações por dia.", "needsConfirmation": true },
         { "text": "Conduzi a adoção de IA com skills customizadas de Claude para desenvolvimento e análise de gaps de segurança, com 80%+ de aderência aos critérios." }
       ]
