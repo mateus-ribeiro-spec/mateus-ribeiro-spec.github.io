@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Mateus Ribeiro — Software Engineer, Payments",
+    "description": "Engineer building and leading high-volume payment systems, now with AI-augmented teams."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "experience": "Experience",
+    "projects": "Projects",
+    "projectsSoon": "Coming soon.",
+    "education": "Education",
+    "language": "Language",
+    "toConfirm": "To be confirmed"
+  },
+  "profile": {
+    "name": "Mateus Ribeiro",
+    "role": "Software Engineer · Tech Lead · Payments",
+    "tagline": "I build and lead high-volume payment systems — now with AI-augmented teams."
+  },
+  "highlights": [
+    "7 years at MagaluPay, from support analyst to squad lead",
+    "Ledger, wire transfers (TED), bill payments, FX and card authorization",
+    "Led up to 14 engineers across 3 squads",
+    "Drove Claude adoption with custom skills: 80%+ adherence to security criteria"
+  ],
+  "experience": [
+    {
+      "company": "MagaluPay",
+      "role": "Squad Lead",
+      "period": "2023 — present",
+      "bullets": [
+        { "text": "Lead 2 cross-functional teams owning Ledger, Financial Services (TED, bill payment, top-ups, FX) and Backoffice." },
+        { "text": "Systems processing around 1 million transactions per day.", "needsConfirmation": true },
+        { "text": "Led AI adoption with custom Claude skills for development and security gap analysis, reaching 80%+ adherence to security criteria." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Senior Systems Analyst · Tech Lead",
+      "period": "2022 — 2023",
+      "bullets": [
+        { "text": "Technical lead for the core transaction systems team; mentor and technical reference." },
+        { "text": "Drove architecture studies with Product on microservices and high availability (Java, Spring Boot)." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Systems Analyst",
+      "period": "2021 — 2022",
+      "bullets": [
+        { "text": "Built card authorization features and network messaging." },
+        { "text": "Developed Ledger APIs in a microservices architecture (Java, Spring Boot, MongoDB)." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Support Analyst",
+      "period": "2019 — 2020",
+      "bullets": [
+        { "text": "Monitored transactional systems and reduced manual work through fixes and automation." }
+      ]
+    },
+    {
+      "company": "Ebix",
+      "role": "Java Developer",
+      "period": "2019",
+      "bullets": [
+        { "text": "Built and maintained systems for Bradesco and OdontoPrev." }
+      ]
+    },
+    {
+      "company": "Wipro",
+      "role": "Java Developer",
+      "period": "2018 — 2019",
+      "bullets": [
+        { "text": "Java EE back-end for Bradesco, with DB2 and mainframe integration." }
+      ]
+    }
+  ],
+  "projects": [],
+  "education": [
+    { "title": "MBA, Leadership, Innovation and Management 4.0", "school": "PUC-RS", "period": "2025 — 2026" },
+    { "title": "Information Systems (Technologist)", "school": "Universidade Cruzeiro do Sul", "period": "2020 — 2022" }
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/mateus-ribeiro-spec" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/mateusribeiro-2943a3163" },
+    { "label": "Email", "url": "mailto:mateus.cribeiro46@gmail.com" }
+  ]
+}
