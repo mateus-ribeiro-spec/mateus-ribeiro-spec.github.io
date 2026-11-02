@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Mateus Ribeiro — Engenheiro de Software, Pagamentos",
+    "description": "Engenheiro que constrói e lidera sistemas de pagamento de alto volume, agora com times aumentados por IA."
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "projectsSoon": "Em breve.",
+    "education": "Formação",
+    "language": "Idioma",
+    "toConfirm": "A confirmar"
+  },
+  "profile": {
+    "name": "Mateus Ribeiro",
+    "role": "Engenheiro de Software · Tech Lead · Pagamentos",
+    "tagline": "Construo e lidero sistemas de pagamento de alto volume — agora com times aumentados por IA."
+  },
+  "highlights": [
+    "7 anos na MagaluPay, de analista de sustentação a squad lead",
+    "Ledger, TED, pagamento de contas, FX e autorização de cartão",
+    "Liderei até 14 engenheiros em 3 squads",
+    "Conduzi a adoção do Claude com skills customizadas: 80%+ de aderência a critérios de segurança"
+  ],
+  "experience": [
+    {
+      "company": "MagaluPay",
+      "role": "Squad Lead",
+      "period": "2023 — atual",
+      "bullets": [
+        { "text": "Lidero 2 times multidisciplinares responsáveis por Ledger, Serviços Financeiros (TED, pagamento de contas, recarga, FX) e Backoffice." },
+        { "text": "Sistemas que processam cerca de 1 milhão de transações por dia.", "needsConfirmation": true },
+        { "text": "Conduzi a adoção de IA com skills customizadas de Claude para desenvolvimento e análise de gaps de segurança, com 80%+ de aderência aos critérios." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Analista de Sistemas Sênior · Tech Lead",
+      "period": "2022 — 2023",
+      "bullets": [
+        { "text": "Liderança técnica do time de sistemas transacionais do core; referência técnica e mentor." },
+        { "text": "Estudos de arquitetura com Produto em microsserviços e alta disponibilidade (Java, Spring Boot)." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Analista de Sistemas",
+      "period": "2021 — 2022",
+      "bullets": [
+        { "text": "Funcionalidades de autorização de cartão e mensageria de bandeira." },
+        { "text": "APIs do Ledger em arquitetura de microsserviços (Java, Spring Boot, MongoDB)." }
+      ]
+    },
+    {
+      "company": "MagaluPay",
+      "role": "Analista de Sustentação",
+      "period": "2019 — 2020",
+      "bullets": [
+        { "text": "Monitoração de sistemas transacionais e redução de trabalho manual com correções e automações." }
+      ]
+    },
+    {
+      "company": "Ebix",
+      "role": "Desenvolvedor Java",
+      "period": "2019",
+      "bullets": [
+        { "text": "Desenvolvimento e sustentação de sistemas para Bradesco e OdontoPrev." }
+      ]
+    },
+    {
+      "company": "Wipro",
+      "role": "Desenvolvedor Java",
+      "period": "2018 — 2019",
+      "bullets": [
+        { "text": "Back-end Java EE para o Bradesco, com DB2 e integração com mainframe." }
+      ]
+    }
+  ],
+  "projects": [],
+  "education": [
+    { "title": "MBA em Liderança, Inovação e Gestão 4.0", "school": "PUC-RS", "period": "2025 — 2026" },
+    { "title": "Tecnologia em Sistemas de Informação", "school": "Universidade Cruzeiro do Sul", "period": "2020 — 2022" }
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/mateus-ribeiro-spec" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/mateusribeiro-2943a3163" },
+    { "label": "E-mail", "url": "mailto:mateus.cribeiro46@gmail.com" }
+  ]
+}

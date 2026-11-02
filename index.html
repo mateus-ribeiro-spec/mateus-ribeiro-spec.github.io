@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: valores estáticos espelham data/content.en.json (idioma padrão) para robôs que não executam JS.
+       O app.js reescreve tudo a partir do JSON ao carregar/trocar idioma. Ao mudar meta.* no JSON EN, atualize aqui também. -->
+  <title data-i18n="meta.title">Mateus Ribeiro — Software Engineer, Payments</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Engineer building and leading high-volume payment systems, now with AI-augmented teams.">
+  <link rel="canonical" href="https://mateus-ribeiro-spec.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://mateus-ribeiro-spec.github.io/">
+  <meta property="og:site_name" content="Mateus Ribeiro">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:title" data-i18n-attr="content:meta.title" content="Mateus Ribeiro — Software Engineer, Payments">
+  <meta property="og:description" data-i18n-attr="content:meta.description" content="Engineer building and leading high-volume payment systems, now with AI-augmented teams.">
+  <meta name="twitter:card" content="summary">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%231c1b19%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27Georgia%27 font-size=%2718%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="ui.skip"></a>
+
+  <header class="top">
+    <nav class="lang" data-i18n-attr="aria-label:ui.language">
+      <button type="button" data-lang="pt" lang="pt-BR" aria-pressed="false">PT</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="name">
+      <h1 id="name" data-i18n="profile.name"></h1>
+      <p class="role" data-i18n="profile.role"></p>
+      <p class="tagline" data-i18n="profile.tagline"></p>
+      <ul class="highlights" id="highlights"></ul>
+    </section>
+
+    <section aria-labelledby="exp-title">
+      <h2 id="exp-title" data-i18n="ui.experience"></h2>
+      <ol class="timeline" id="experience"></ol>
+    </section>
+
+    <section aria-labelledby="proj-title">
+      <h2 id="proj-title" data-i18n="ui.projects"></h2>
+      <ul class="projects" id="projects"></ul>
+      <p class="muted" id="projects-empty" data-i18n="ui.projectsSoon" hidden></p>
+    </section>
+
+    <section aria-labelledby="edu-title">
+      <h2 id="edu-title" data-i18n="ui.education"></h2>
+      <ul class="plain" id="education"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <ul class="links" id="links"></ul>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
